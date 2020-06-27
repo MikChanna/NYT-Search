@@ -6,64 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYT Article Search</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center justify-content-center">
-          <h1 class="display-4">New York Times Search</h1>
+            <h1 class="display-4">New York Times Search</h1>
         </div>
-      </div>
+    </div>
 
-      <div class="container search">
-          <div class="row containhead mb-2">
-              <div class="col-12">Search Parameters</div>
-          </div>
-            <form>
-                <div class="form-group">
-                    <label for="searchTerm">Search Term</label>
-                    <input type="email" class="form-control" id="searchTerm">
-                </div>
-            </form>
-            <form>
-                <div class="form-group">
-                    <label for="numberOfItemsToRetrieve">Number of Items to Retrieve</label>
-                    <input type="email" class="form-control" id="numberOfItemsToRetrieve">
-                </div>
-            </form>
-            <form>
-                <div class="form-group">
-                    <label for="startYear">Start Year (Optional)</label>
-                    <input type="email" class="form-control" id="startYear">
-                </div>
-            </form>
-            <form>
-                <div class="form-group">
-                    <label for="endYear">End Year (Optional)</label>
-                    <input type="email" class="form-control" id="endYear">
-                </div>
-            </form>
-            <div class="row">
-                <button class="btn btn-primary ml-3 mr-1" id="search" type="submit">Search</button>
-                <button class="btn btn-danger ml-2" id="clearResults" type="submit">Clear Results</button>
+    <div class="container search">
+        <div class="row containhead mb-2">
+            <div class="col-12">Search Parameters</div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="searchTerm">Search Term</label>
+                <input type="email" class="form-control" id="searchTerm">
             </div>
-      </div>
-      <div class="container mt-4">
-          <div class="row mb-2 containhead">
-              <div class="col-12">
-                  Top Articles
-              </div>
-          </div>
-          <div class="row d-flex">
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="numberOfItemsToRetrieve">Number of Items to Retrieve</label>
+                <input type="email" class="form-control" id="numberOfItemsToRetrieve">
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="startYear">Start Year (Optional)</label>
+                <input type="email" class="form-control" id="startYear">
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="endYear">End Year (Optional)</label>
+                <input type="email" class="form-control" id="endYear">
+            </div>
+        </form>
+        <div class="row">
+            <button class="btn btn-primary ml-3 mr-1" id="search" type="submit">Search</button>
+            <button class="btn btn-danger ml-2" id="clearResults" type="submit">Clear Results</button>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row mb-2 containhead">
+            <div class="col-12" id="seachResults">
+                Top Articles
+            </div>
+        </div>
+        <div class="row d-flex">
             <div class="col-12">
 
             </div>
-          </div>
+        </div>
 
-      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>

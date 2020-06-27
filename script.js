@@ -5,22 +5,29 @@ var endYear = "&end_date=" + $(".endYear");
 var searchFilter = searchInputText + startYear + endYear;
 var URL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchInputText + "&api-key=" + apiKey;
 
-$.ajax({
-    url: URL,
-    method: "GET"
-}).then(function(response) {
 
-    console.log(response);
-    var responseArr = response.data;
-    responseArr.length = $(".numberToRetrieve");
+$("#search").on("click", function() {
+    $.ajax({
+        url: URL,
+        method: "GET"
+    }).then(function(response) {
 
-    for (let index = 0; i < responseArr.length; i++) {
+        console.log(response);
+        var responseArr = response.data;
+        responseArr.length = $(".numberToRetrieve");
 
-        var articlesHeadlines = response[i].headline;
+        for (let index = 0; i < responseArr.length; i++) {
+
+            var articlesHeadlines = response[i].headline;
 
 
-    }
+        }
 
+    });
 
+    $("#clearResults").on("click", function() {
+        $("#searchResults").value = "";
+        $("#searchResults").innerText = "";
+    });
 
 });
