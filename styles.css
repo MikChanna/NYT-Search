@@ -1,13 +1,13 @@
 
 /*body*/
-::-webkit-input-placeholder {
+.container {
 font-family: 'Times New Roman', Times, serif;
 font-size: 16px;
-line-height: 2px;
+line-height: 12px;
 }
 
 /*jumbotron*/
-::-webkit-input-placeholder {
+.jumbotron {
 text-align: center;
 background-color: aquamarine;
 color: black;
@@ -17,7 +17,7 @@ border-bottom: 10px black;
 }
 
 /* search button*/
-::-webkit-input-placeholder {
+#search {
   background-color: #4CAF50; 
   border: none;
   color: white;
@@ -29,7 +29,7 @@ border-bottom: 10px black;
 }
 
 /* clear button*/
-::-webkit-input-placeholder {
+#clearResults {
   background-color: #7e1d0c;
   border: none;
   color: white;
