@@ -1,0 +1,40 @@
+
+/*body*/
+::-webkit-input-placeholder {
+font-family: 'Times New Roman', Times, serif;
+font-size: 16px;
+line-height: 2px;
+}
+
+/*jumbotron*/
+::-webkit-input-placeholder {
+text-align: center;
+background-color: aquamarine;
+color: black;
+border-radius: 0px;
+border-bottom: 10px black;
+
+}
+
+/*button*/
+::-webkit-input-placeholder {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+}
+
+/*footer*/
+::-webkit-input-placeholder {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;  
+}
